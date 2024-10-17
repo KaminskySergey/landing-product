@@ -23,8 +23,8 @@ export const Form = forwardRef<HTMLDivElement, IForm>((_, ref) => {
     };
 
     const sendMessageToTelegram = async (message: string) => {
-        const botToken = import.meta.env.VITE_API_BOT_TOKEN;
-        const chatId = import.meta.env.VITE_ID_CHAT;
+        const botToken = '7694282364:AAE-d4hIA0f9HhiFTn6ob5HlFB6FnVD23-4';
+        const chatId = '636233042';
         const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
         const params = {
             chat_id: chatId,
