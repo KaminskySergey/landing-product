@@ -1,4 +1,5 @@
 import Gallery from "./Gallery";
+import { GalleryMobile } from "./GalleryMobile";
 
 interface IHero {
     scrollToForm: () => void
@@ -9,6 +10,7 @@ export function Hero({ scrollToForm }: IHero) {
         <div className="sm:px-4 md:px-8 mx-auto flex flex-col md:flex-row gap-4 items-center max-w-[1440px] ">
 
             <div className="w-full md:w-1/2 mt-12 mb-6 md:mb-0 md:mt-0 ml-0  justify-center">
+                <GalleryMobile />
                 <Gallery />
             </div>
             <div className="w-full md:w-1/2">

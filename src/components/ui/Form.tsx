@@ -42,7 +42,7 @@ export const Form = forwardRef<HTMLDivElement, IForm>((_, ref) => {
 
             const data = await response.json();
             if (!data.ok) {
-                throw new Error("Ошибка отправки в Telegram");
+                throw new Error("Telegram sending error");
             }
 
             return true;
@@ -77,7 +77,7 @@ export const Form = forwardRef<HTMLDivElement, IForm>((_, ref) => {
                     <div className="grid grid-cols-1 gap-4">
 
                         <div>
-                            <label className="block text-gray-600 mb-1" htmlFor="firstName">Ім'я</label>
+                            <label className="block font-bold text-gray-600 mb-1" htmlFor="firstName">Ім'я</label>
                             <input
                                 type="text"
                                 id="firstName"
@@ -91,7 +91,7 @@ export const Form = forwardRef<HTMLDivElement, IForm>((_, ref) => {
                         </div>
 
                         <div>
-                            <label className="block text-gray-600 mb-1" htmlFor="lastName">Прізвище</label>
+                            <label className="block font-bold text-gray-600 mb-1" htmlFor="lastName">Прізвище</label>
                             <input
                                 type="text"
                                 id="lastName"
@@ -105,7 +105,7 @@ export const Form = forwardRef<HTMLDivElement, IForm>((_, ref) => {
                         </div>
 
                         <div>
-                            <label className="block text-gray-600 mb-1" htmlFor="phoneNumber">Номер телефону</label>
+                            <label className="block font-bold text-gray-600 mb-1" htmlFor="phoneNumber">Номер телефону</label>
                             <input
                                 type="tel"
                                 id="phoneNumber"
