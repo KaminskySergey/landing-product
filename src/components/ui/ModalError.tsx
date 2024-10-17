@@ -14,7 +14,7 @@ export function ModalError({ }: IModalError) {
                 />
             </svg>
             <div className="text-center">
-                <h3 className="md:text-3xl text-2xl text-gray-900 font-bold">Сталася помилка</h3>
+                <h3 className="md:text-3xl text-2xl text-gray-900 font-bold">Сталася помилка  ${import.meta.env.VITE_API_BOT_TOKEN}  |   ${import.meta.env.VITE_ID_CHAT}</h3>
                 <p className="text-gray-600 font-bold my-2">На жаль, ваше замовлення не вдалося відправити.</p>
                 <p className="text-black font-semibold text-2xl">Будь ласка, спробуйте ще раз!</p>
             </div>
