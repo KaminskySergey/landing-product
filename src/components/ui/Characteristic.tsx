@@ -6,7 +6,7 @@ export function Characteristic({}: ICharacteristic) {
         <div className="bg-white py-12">
   <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center">
     <div className="flex-1 mb-8 lg:mb-0 lg:mr-8">
-      <img src="/public/kover.jpg" alt="Коврик з підігрівом Folem KM" className="w-full h-auto rounded-lg shadow-md" />
+      <img src="/kover.jpg" alt="Коврик з підігрівом Folem KM" className="w-full h-auto rounded-lg shadow-md" />
     </div>
 
     <div className="flex-1">

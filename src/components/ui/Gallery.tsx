@@ -17,7 +17,7 @@ const Gallery = () => {
             <div className="mb-4">
                 <img
                     className="h-auto w-full max-w-full rounded-lg object-contain object-center md:h-[480px] bg-white p-2"
-                    src={`/public/${currentImage}`}
+                    src={`/${currentImage}`}
                     alt={`${currentImage}`}
                 />
             </div>
@@ -25,7 +25,7 @@ const Gallery = () => {
                 {images.map((image, index) => (
                     <div key={index} className="flex justify-center p-2">
                         <img
-                            src={`/public/${image}`} 
+                            src={`/${image}`} 
                             className="object-contain object-center h-20 max-w-full rounded-lg cursor-pointer bg-white p-1 border-2 border-gray-300 hover:border-gray-500 transition duration-150"
                             alt={`gallery-image-${index}`}
                             onClick={() => setCurrentImage(image)}

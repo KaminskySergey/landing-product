@@ -12,7 +12,7 @@ export function Advantage({ }: IAdvantage) {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg transition-transform hover:scale-105">
                         <div className="flex items-center justify-center w-16 h-16 mb-4 bg-blue-500 text-white rounded-full">
-                            <img src="/public/free-icon-warm.png" alt="warm" />
+                            <img src="/free-icon-warm.png" alt="warm" />
                         </div>
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">3 режими підігріву</h3>
                         <p className="text-gray-600">
@@ -22,7 +22,7 @@ export function Advantage({ }: IAdvantage) {
 
                     <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg transition-transform hover:scale-105">
                         <div className="flex items-center justify-center w-16 h-16 mb-4 bg-red-500 text-white rounded-full">
-                        <img src="/public/free-icon-usb.png" alt="usb" />
+                        <img src="/free-icon-usb.png" alt="usb" />
                         </div>
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">Живлення від USB</h3>
                         <p className="text-gray-600">
@@ -32,7 +32,7 @@ export function Advantage({ }: IAdvantage) {
 
                     <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg transition-transform hover:scale-105">
                         <div className="flex items-center justify-center w-16 h-16 mb-4 bg-green-500 text-white rounded-full">
-                        <img src="/public/free-icon-energy.png" alt="energy" />
+                        <img src="/free-icon-energy.png" alt="energy" />
                         </div>
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">Енергоефективність</h3>
                         <p className="text-gray-600">
@@ -42,7 +42,7 @@ export function Advantage({ }: IAdvantage) {
 
                     <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg transition-transform hover:scale-105">
                         <div className="flex items-center justify-center w-16 h-16 mb-4 bg-yellow-500 text-white rounded-full">
-                        <img src="/public/free-icon-fast-time.png" alt="time" />
+                        <img src="/free-icon-fast-time.png" alt="time" />
                         </div>
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">Швидкий нагрів</h3>
                         <p className="text-gray-600">
@@ -52,7 +52,7 @@ export function Advantage({ }: IAdvantage) {
                     
                     <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg transition-transform hover:scale-105">
                         <div className="flex items-center justify-center w-16 h-16 mb-4 bg-purple-500 text-white rounded-full">
-                        <img src="/public/free-icon-thumbs.png" alt="thumbs" />
+                        <img src="/free-icon-thumbs.png" alt="thumbs" />
                         </div>
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">Компактність і портативність</h3>
                         <p className="text-gray-600">
@@ -62,7 +62,7 @@ export function Advantage({ }: IAdvantage) {
 
                     <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg transition-transform hover:scale-105">
                         <div className="flex items-center justify-center w-16 h-16 mb-4 bg-indigo-500 text-white rounded-full">
-                        <img src="/public/free-icon-shield.png" alt="shield" />
+                        <img src="/free-icon-shield.png" alt="shield" />
                         </div>
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">Безпека</h3>
                         <p className="text-gray-600">
