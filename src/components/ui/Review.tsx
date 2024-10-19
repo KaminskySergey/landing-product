@@ -5,7 +5,7 @@ interface IReview { }
 
 
 export function Review({ }: IReview) {
-    return <section className="py-[64px] lg:py-[94px] bg-gray-100">
+    return <section className="py-[64px] lg:py-[94px] bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <h2 className="text-4xl font-bold text-gray-800 mb-10 text-center">Відгуки</h2>
 

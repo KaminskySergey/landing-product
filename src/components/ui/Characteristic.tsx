@@ -5,12 +5,12 @@ interface ICharacteristic { }
 
 export function Characteristic({ }: ICharacteristic) {
   return (
-    <section className="py-[64px] lg:py-[94px]">
-      <div className="bg-white py-12">
+    <section className="py-[64px] lg:py-[94px] bg-white">
+      <div className=" py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center">
           <div className="flex-1 mb-8 lg:mb-0 lg:mr-8">
             <img
-              src="/kover.jpg"
+              src="/obo-1.jpg"
               alt="Коврик з підігрівом Folem KM"
               className="w-full h-auto rounded-lg shadow-md"
             />

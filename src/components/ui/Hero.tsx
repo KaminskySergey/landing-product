@@ -22,18 +22,29 @@ export function Hero({ scrollToForm }: IHero) {
                 <div>
                     <div className="flex flex-col gap-2 space-y-2">
                         <div className="">
-                            <span className="text-2xl text-red-500 font-semibold line-through">1000 грн</span>
-                            <span className="ml-6 text-4xl font-bold text-green-500">500 грн</span>
+                            <span className="text-2xl text-red-500 font-semibold line-through">870 грн</span>
+                            <span className="ml-6 text-4xl font-bold text-green-500">499 грн</span>
                         </div>
 
                         <button onClick={scrollToForm} className="relative inline-flex  md:w-[300px]  justify-center px-6 py-3 bg-gradient-to-r from-green-400 to-blue-500 text-white font-medium text-lg rounded-lg shadow-lg transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300">
                             Замовити
                             <span className="absolute top-[-15px] right-[-15px] transform translate-x-2 -translate-y-2 bg-red-500 text-white text-xl font-bold px-2 py-1 rounded-full animate-scale">
-                                -50%
+                                -43%
                             </span>
                         </button>
                     </div>
 
+                </div>
+                <div className="mt-8">
+                    <div className="text-[18px] font-semibold">Можлива електронна оплата</div>
+                    <div className="h-[80px] mt-2 flex gap-3">
+                        <div className="bodyelectro">
+                            <img src="/mastercard.svg" alt="mastercard" className="h-full" />
+                        </div>
+                        <div className="bodyelectro">
+                            <img src="/visa.svg" alt="visa" className="h-full" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
