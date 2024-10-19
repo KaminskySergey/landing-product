@@ -12,7 +12,7 @@ import { AdditionalAdvantages } from './components/ui/AdditionalAdvantages'
 
 function App() {
 
-  const formRef = useRef<HTMLDivElement>(null); // Создание рефа для формы
+  const formRef = useRef<HTMLDivElement>(null); 
 
   const scrollToForm = () => {
     if (formRef.current) {
