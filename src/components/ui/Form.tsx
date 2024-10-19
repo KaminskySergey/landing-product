@@ -3,11 +3,16 @@ import Modal from "./Modal";
 import { ModalSuccess } from "./ModalSuccess";
 import { ModalError } from "./ModalError";
 
+interface IFormData {
+    firstName: string
+    lastName: string
+    phoneNumber: string
+}
 
 interface IForm { }
 
 export const Form = forwardRef<HTMLDivElement, IForm>((_, ref) => {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<IFormData>({
         firstName: "",
         lastName: "",
         phoneNumber: ""
@@ -15,25 +20,31 @@ export const Form = forwardRef<HTMLDivElement, IForm>((_, ref) => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isError, setIsError] = useState(false);
-    const [errors, setErrors] = useState<Record<string, string>>({});
+    const [errors, setErrors] = useState<Record<string, string>>({}); 
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
+
+        
         setFormData((prevData) => ({ ...prevData, [name]: value }));
+
+        const newErrors = validateForm({ ...formData, [name]: value });
+        setErrors(newErrors); 
     };
 
-    const validateForm = () => {
-        const newErrors: any = {};
+    const validateForm = (data: IFormData) => {
+        const newErrors: Partial<Record<keyof IFormData, string>> = {}; 
+
         const nameRegex = /^[A-Za-zА-Яа-яЁёІіЇї]{1,}$/;
         const phoneRegex = /^\+?[0-9]{10,15}$/;
 
-        if (!nameRegex.test(formData.firstName)) {
+        if (!nameRegex.test(data.firstName)) {
             newErrors.firstName = "Ім'я повинно містити лише букви.";
         }
-        if (!nameRegex.test(formData.lastName)) {
+        if (!nameRegex.test(data.lastName)) {
             newErrors.lastName = "Прізвище повинно містити лише букви.";
         }
-        if (!phoneRegex.test(formData.phoneNumber)) {
+        if (!phoneRegex.test(data.phoneNumber)) {
             newErrors.phoneNumber = "Номер телефону повинен бути у форматі +380XXXXXXXXX.";
         }
 
@@ -73,10 +84,10 @@ export const Form = forwardRef<HTMLDivElement, IForm>((_, ref) => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        const validationErrors = validateForm();
+        const validationErrors = validateForm(formData); 
 
         if (Object.keys(validationErrors).length > 0) {
-            setErrors(validationErrors);
+            setErrors(validationErrors); 
             return;
         }
 
@@ -93,7 +104,6 @@ export const Form = forwardRef<HTMLDivElement, IForm>((_, ref) => {
     };
 
     const closeModal = () => setIsModalOpen(false);
-
     return (
         <>
             <section ref={ref} className="bg-gradient-to-r from-blue-500 to-purple-500 py-12 px-2">
